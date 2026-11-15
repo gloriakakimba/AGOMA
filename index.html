@@ -7,49 +7,233 @@
   <meta name="description" content="AGOMA — Association des GOs Matérialistes. Que le goumin soit tout, sauf financier.">
   <title>AGOMA — Que le goumin soit tout, sauf financier.</title>
   <style>
-    :root{--madder:#9E182B;--wenge:#785C61;--fairy:#F9CBD6;--champagne:#F2E0D2;--sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--handwriting:'Segoe Print','Bradley Hand',cursive;--shadow:0 18px 48px rgba(120,92,97,.12);--line:rgba(120,92,97,.17)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--champagne);color:var(--wenge);font-family:var(--sans);line-height:1.6}button,input,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.shell{width:min(1160px,calc(100% - 48px));margin:auto}.eyebrow{display:flex;align-items:center;gap:12px;color:var(--madder);font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.eyebrow:before{content:"";width:30px;height:1px;background:var(--madder)}.serif{font-weight:650;letter-spacing:-.055em}.handwriting{font-family:var(--handwriting);font-weight:400;letter-spacing:0}.topline{height:34px;background:var(--madder);color:var(--champagne);display:flex;align-items:center;justify-content:center;text-align:center;padding:0 14px;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase}.header{position:sticky;top:0;z-index:20;background:rgba(242,224,210,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:11px;color:var(--madder);font-size:1.55rem;font-weight:800;letter-spacing:.04em}.brand small{display:block;color:var(--wenge);font-family:var(--sans);font-size:.51rem;font-weight:700;letter-spacing:.12em;line-height:1.25;text-transform:uppercase}.brand-mark{width:42px;height:42px}.navlinks{display:flex;gap:27px;align-items:center;font-size:.78rem;font-weight:650}.navlinks a:not(.button):hover{color:var(--madder)}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--madder);border-radius:5px;background:var(--madder);color:var(--champagne);padding:13px 20px;font-size:.79rem;font-weight:750;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer}.button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(158,24,43,.18)}.button.outline{color:var(--madder);background:transparent}.button.outline:hover{background:var(--fairy)}.menu-toggle{display:none;border:1px solid var(--line);border-radius:5px;background:transparent;color:var(--madder);padding:8px 11px;font-size:1.15rem;cursor:pointer}
-    .hero{position:relative;overflow:hidden;padding:74px 0 84px;background:var(--champagne)}.hero:after{position:absolute;content:"";width:520px;height:520px;border:1px solid rgba(158,24,43,.13);border-radius:50%;right:-100px;top:-145px;box-shadow:0 0 0 36px rgba(158,24,43,.025),0 0 0 78px rgba(158,24,43,.025)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.hero h1{max-width:660px;margin:22px 0 18px;color:var(--madder);font-size:clamp(3.2rem,7.3vw,6.45rem);line-height:.98}.hero h1 em{color:var(--wenge);font-style:normal;font-weight:500}.hero-copy{max-width:505px;font-size:1.04rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.hero-note{margin-top:22px;font-size:.72rem;letter-spacing:.04em}.hero-note span{color:var(--madder);font-weight:800}.seal-wrap{position:relative;display:grid;place-items:center;min-height:390px}.seal{width:min(370px,85vw);aspect-ratio:1;border:1px solid rgba(158,24,43,.27);border-radius:50%;display:grid;place-items:center;position:relative;background:var(--fairy);box-shadow:var(--shadow)}.seal:before,.seal:after{content:"";position:absolute;border:1px solid rgba(158,24,43,.2);border-radius:50%}.seal:before{inset:17px}.seal:after{inset:28px;border-style:dashed}.seal-inner{position:relative;text-align:center;color:var(--madder)}.seal-crown{width:93px;height:77px;display:block;margin:0 auto 9px}.seal-title{font-size:3.7rem;line-height:1;letter-spacing:.08em;font-weight:750}.seal-sub{margin-top:12px;font-size:.61rem;font-weight:750;letter-spacing:.2em;text-transform:uppercase}.seal-caption{position:absolute;right:-5px;bottom:28px;width:144px;padding:13px 16px;border-radius:4px;background:var(--madder);color:var(--champagne);box-shadow:var(--shadow);font-family:var(--handwriting);font-size:.95rem;transform:rotate(-4deg)}
-    section{padding:90px 0}.section-head{max-width:680px;margin-bottom:38px}.section-head h2{margin:14px 0;color:var(--madder);font-size:clamp(2.35rem,5vw,4rem);line-height:1.05}.section-head p{max-width:600px;margin:0}.mission{background:var(--fairy)}.mission-grid{display:grid;grid-template-columns:1fr .85fr;gap:74px;align-items:center}.mission-quote{margin:20px 0 0;padding-left:22px;border-left:2px solid var(--madder);color:var(--madder);font-family:var(--handwriting);font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.4}.values{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.value{min-height:102px;padding:19px;border:1px solid rgba(158,24,43,.15);border-radius:5px;background:var(--champagne)}.value strong{display:block;color:var(--madder);font-size:1.05rem}.value span{font-size:.75rem}
-    .stats{padding:34px 0;background:var(--madder);color:var(--champagne)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}.stat strong{display:block;font-size:2.4rem;font-weight:500;line-height:1.1}.stat span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}.conditions{background:var(--champagne)}.card-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.condition-card{min-height:190px;padding:22px 18px;border:1px solid var(--line);border-radius:6px;background:var(--fairy);box-shadow:0 8px 24px rgba(120,92,97,.06)}.number{color:var(--madder);font-size:1.15rem;font-weight:700}.condition-card h3{margin:15px 0 0;color:var(--wenge);font-size:1.05rem;font-weight:600;line-height:1.4}
-    .members{background:var(--fairy)}.tier-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;align-items:stretch}.tier{position:relative;display:flex;flex-direction:column;min-height:330px;padding:23px 18px;border:1px solid rgba(158,24,43,.18);border-radius:6px;background:var(--champagne);box-shadow:0 10px 26px rgba(120,92,97,.08)}.tier:nth-child(3){background:var(--fairy)}.tier:nth-child(4),.tier:nth-child(5){background:var(--madder);color:var(--champagne);border-color:var(--madder)}.tier-badge{align-self:flex-start;border:1px solid currentColor;border-radius:50px;padding:5px 9px;font-size:.59rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.tier h3{margin:18px 0 8px;color:var(--madder);font-size:1.25rem;font-weight:650}.tier:nth-child(4) h3,.tier:nth-child(5) h3{color:var(--champagne)}.tier p{min-height:68px;margin:0;font-size:.76rem}.tier ul{padding:14px 0 0;margin:auto 0 0;list-style:none;border-top:1px solid var(--line);font-size:.69rem}.tier:nth-child(4) ul,.tier:nth-child(5) ul{border-color:rgba(242,224,210,.35)}.tier li{padding:4px 0}.tier li:before{content:"✦";margin-right:8px;color:var(--madder)}.tier:nth-child(4) li:before,.tier:nth-child(5) li:before{color:var(--fairy)}
-    .quote-section{padding:72px 0;background:var(--wenge);color:var(--champagne)}.quote-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}.quote-mark{color:var(--fairy);font-family:var(--handwriting);font-size:4rem;line-height:.7}.quote-text{max-width:780px;margin:12px 0 0;font-family:var(--handwriting);font-size:clamp(1.3rem,2.5vw,2rem);line-height:1.4}.quote-source{margin-top:14px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fairy)}.quote-button{flex:none;border:1px solid var(--fairy);border-radius:50%;width:48px;height:48px;color:var(--champagne);background:transparent;font-size:1.2rem;cursor:pointer}
-    .generator{background:var(--champagne)}.generator-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}.form-panel{padding:27px;border:1px solid var(--line);border-radius:7px;background:var(--fairy);box-shadow:var(--shadow)}.form-panel h3{margin:0 0 22px;color:var(--madder);font-size:1.3rem;font-weight:650}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.7rem;font-weight:750;letter-spacing:.04em}.field input,.field select{width:100%;padding:11px 12px;border:1px solid rgba(120,92,97,.28);border-radius:4px;background:var(--champagne);color:var(--wenge);outline:none}.field input:focus,.field select:focus{border-color:var(--madder)}.field input[type=file]{font-size:.7rem}.form-panel .button{width:100%;margin-top:18px}.form-hint{margin:11px 0 0;font-size:.67rem}.preview-wrap{padding:14px;border:1px solid var(--line);border-radius:7px;background:var(--fairy)}.member-card{position:relative;overflow:hidden;min-height:300px;padding:25px;color:var(--champagne);border-radius:8px;background:var(--madder);box-shadow:0 20px 38px rgba(120,92,97,.22)}.member-card:after{position:absolute;content:"";width:320px;height:320px;right:-130px;top:-160px;border:1px solid rgba(242,224,210,.3);border-radius:50%;box-shadow:0 0 0 22px rgba(242,224,210,.06),0 0 0 48px rgba(242,224,210,.05)}.card-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(242,224,210,.35);padding-bottom:14px}.card-brand{display:flex;align-items:center;gap:9px;font-size:1.25rem;font-weight:750;letter-spacing:.08em}.card-brand svg{width:30px;height:30px}.card-type{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase}.card-content{position:relative;z-index:1;display:grid;grid-template-columns:106px 1fr;gap:21px;align-items:center;padding-top:24px}.photo-frame{width:106px;height:132px;overflow:hidden;border:1px solid rgba(242,224,210,.72);border-radius:4px;background:var(--fairy);display:grid;place-items:center;color:var(--madder);font-size:2.1rem;font-weight:700}.photo-frame img{width:100%;height:100%;object-fit:cover}.card-name{margin:0 0 14px;font-size:1.35rem;line-height:1.2;font-weight:700}.card-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}.card-meta span{display:block;font-size:.55rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fairy)}.card-meta strong{font-size:.75rem;font-weight:650}.card-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;margin-top:21px;padding-top:13px;border-top:1px solid rgba(242,224,210,.35);font-size:.62rem;letter-spacing:.09em}.card-bottom b{font-size:.75rem;font-weight:750}.card-bottom .card-slogan{font-family:var(--handwriting);font-size:.78rem;letter-spacing:0}.preview-actions{display:flex;gap:10px;margin-top:15px}.preview-actions .button{flex:1;padding:11px 12px;font-size:.72rem}.fineprint{font-size:.66rem;color:var(--wenge)}
-    .join{padding:75px 0;background:var(--fairy);text-align:center}.join h2{margin:13px 0;color:var(--madder);font-size:clamp(2.5rem,5.5vw,4.4rem);line-height:1}.join p{max-width:570px;margin:0 auto 24px}.footer{padding:32px 0;background:var(--madder);color:var(--champagne)}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-brand{font-size:1.35rem;font-weight:750;letter-spacing:.09em}.footer small{display:block;font-family:var(--sans);font-size:.58rem;letter-spacing:.1em}.footer-note{text-align:right;font-size:.67rem}.footer-note em{font-family:var(--handwriting);font-size:.9rem}
-    @media(max-width:980px){.hero-grid{gap:25px}.tier-grid{grid-template-columns:repeat(3,1fr)}.card-grid{grid-template-columns:repeat(3,1fr)}.tier{min-height:300px}.navlinks{gap:15px}.navlinks>a{font-size:.72rem}}
-    @media(max-width:700px){.shell{width:min(100% - 34px,560px)}.topline{font-size:.56rem;letter-spacing:.07em}.nav{height:68px}.brand{font-size:1.35rem}.brand-mark{width:37px;height:37px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;left:0;right:0;top:68px;padding:17px 22px 22px;background:var(--champagne);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:15px}.navlinks.open{display:flex}.navlinks .button{text-align:center}.hero{padding:56px 0 54px}.hero-grid{grid-template-columns:1fr;gap:12px}.hero h1{font-size:clamp(3.2rem,15vw,5rem)}.hero-copy{font-size:.91rem}.seal-wrap{min-height:310px}.seal{width:290px}.seal-title{font-size:3.1rem}.seal-crown{width:75px;height:63px}.seal-caption{right:4px;bottom:12px}.hero-actions .button{flex:1}.section{padding:67px 0}section{padding:68px 0}.section-head{margin-bottom:28px}.mission-grid{grid-template-columns:1fr;gap:30px}.mission-quote{font-size:1.35rem}.stats-grid{grid-template-columns:repeat(2,1fr);gap:24px 10px}.stat strong{font-size:2rem}.card-grid{grid-template-columns:repeat(2,1fr);gap:10px}.condition-card{min-height:160px;padding:16px}.condition-card h3{font-size:.95rem}.tier-grid{grid-template-columns:repeat(2,1fr);gap:10px}.tier{min-height:310px;padding:18px 14px}.tier:last-child{grid-column:1/-1;min-height:250px}.tier h3{font-size:1.17rem}.tier p{font-size:.71rem}.quote-inner{align-items:flex-start;gap:16px}.quote-text{font-size:1.3rem}.quote-button{width:42px;height:42px}.generator-grid{grid-template-columns:1fr;gap:25px}.form-panel{padding:20px}.member-card{min-height:270px;padding:19px}.card-content{grid-template-columns:88px 1fr;gap:14px}.photo-frame{width:88px;height:112px}.card-name{font-size:1.15rem}.preview-wrap{padding:9px}.join{padding:60px 0}.footer-inner{align-items:flex-start}.footer-note{max-width:170px}.footer-brand{font-size:1.2rem}}
-    @media(max-width:390px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.card-meta{gap:7px}.card-meta strong{font-size:.68rem}.card-type{font-size:.5rem}.card-content{grid-template-columns:78px 1fr;gap:11px}.photo-frame{width:78px;height:102px}.card-name{font-size:1.05rem}.tier-grid{grid-template-columns:1fr 1fr}}
-    @media print{body *{visibility:hidden}.member-card,.member-card *{visibility:visible}.member-card{position:fixed;left:0;top:0;width:100%;box-shadow:none}.preview-wrap{border:0;padding:0}.preview-actions,.form-panel,.section-head,.topline,.header,.footer{display:none!important}}
+    :root{
+      --madder:#9E182B;
+      --wenge:#785C61;
+      --fairy:#F9CBD6;
+      --champagne:#F2E0D2;
+      --line:rgba(120,92,97,.18);
+      --sans:Arial,Helvetica Neue,Segoe UI,sans-serif;
+      --serif:Arial,Helvetica Neue,Segoe UI,sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{
+      margin:0;
+      background:var(--champagne);
+      color:var(--wenge);
+      font-family:var(--sans);
+      line-height:1.6;
+      letter-spacing:0;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a,button,input,select,textarea,
+    p,li,span,strong,em,h1,h2,h3,h4,h5,h6,
+    .serif,.eyebrow,.brand,.topline,.member-card,.quote-text,
+    .card-name,.card-title,.card-meta,.card-type,.card-content,
+    .stat,.value,.condition-card,.tier,.number,
+    .navlinks,.footer-note,.mission-quote{
+      font-family:var(--sans) !important;
+    }
+
+    .serif,
+    h1,h2,h3,h4,h5,h6,
+    .brand,
+    .topline,
+    .eyebrow,
+    .quote-mark,
+    .mission-quote,
+    .seal,
+    .member-card *{
+      font-family:var(--sans) !important;
+      font-style:normal !important;
+      letter-spacing:0 !important;
+    }
+
+    .hero{position:relative;overflow:hidden;padding:74px 0 84px;background:var(--champagne)}
+    .hero:after{position:absolute;content:"";width:520px;height:520px;border:1px solid rgba(158,24,43,.13);border-radius:50%;right:-120px;top:-110px}
+    .shell{width:min(100% - 52px,1180px);margin:0 auto}
+    .header{position:sticky;top:0;z-index:20;background:rgba(242,224,210,.9);backdrop-filter:blur(8px);border-bottom:1px solid rgba(120,92,97,.12)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
+    .brand{display:inline-flex;align-items:center;gap:12px;color:var(--madder);font-weight:800;text-decoration:none;font-size:1.7rem;letter-spacing:.01em}
+    .brand-mark{width:42px;height:42px;display:block}
+    .navlinks{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+    .navlinks a{color:var(--wenge);text-decoration:none;font-weight:700;font-size:.88rem;text-transform:uppercase;letter-spacing:.08em}
+    .menu-toggle{display:none}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px}
+    .eyebrow{display:flex;align-items:center;gap:8px;color:var(--madder);font-weight:800;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+    .eyebrow:before{content:"";display:block;width:28px;height:1px;background:var(--madder);opacity:.7}
+    h1{margin:18px 0 20px;font-size:clamp(3.2rem,6vw,6rem);line-height:0.96;color:var(--madder);font-weight:900}
+    h1 em{font-style:normal;color:var(--wenge);font-weight:800}
+    .hero p{max-width:560px;font-size:1.1rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:800;border:1px solid var(--madder);transition:.2s ease}
+    .btn-primary{background:var(--madder);color:#fff}
+    .btn-secondary{background:transparent;color:var(--madder)}
+    .seal-wrap{display:flex;justify-content:center;align-items:center}
+    .seal{position:relative;width:min(100%,420px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff 0%,#f2e0d2 22%,#f9cbd6 46%,#d8a7af 72%,#9e182b 100%);border:10px solid rgba(158,24,43,.45);display:flex;align-items:center;justify-content:center;box-shadow:0 22px 45px rgba(158,24,43,.12)}
+    .seal-inner{width:72%;height:72%;border:2px solid rgba(158,24,43,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--madder);font-weight:800;letter-spacing:.12em;text-transform:uppercase;position:relative}
+    .seal-crown{width:62%;height:62%}
+    .mission-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:start}
+    section{padding:90px 0}
+    .section-head{max-width:680px;margin-bottom:38px}
+    .section-head h2{margin:14px 0;color:var(--madder);font-size:clamp(2.35rem,5vw,4rem);line-height:1.05;font-weight:900}
+    .section-head p{max-width:620px;color:var(--wenge);font-size:1.05rem}
+    .values{display:grid;gap:14px}
+    .value{padding:18px 18px 16px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.18)}
+    .value strong{display:block;color:var(--madder);font-size:.95rem;letter-spacing:.04em;margin-bottom:6px}
+    .value span{display:block;color:var(--wenge);font-size:1rem}
+    .mission-quote{margin-top:26px;padding:18px 20px;border-left:4px solid var(--madder);font-weight:700;color:var(--madder);background:rgba(158,24,43,.04);border-radius:8px}
+    .stats{padding:34px 0;background:var(--madder);color:var(--champagne)}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+    .stat strong{display:block;font-size:2.2rem;font-weight:900;line-height:1}
+    .stat span{display:block;margin-top:10px;font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+    .conditions .card-grid,.members .tier-grid,.generator .card-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .condition-card,.tier{position:relative;display:flex;flex-direction:column;min-height:240px;padding:24px 20px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.28)}
+    .condition-card .number{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--fairy);color:var(--madder);font-size:1rem;font-weight:900;margin-bottom:20px}
+    .condition-card h3{margin:0;color:var(--madder);font-size:1.4rem;line-height:1.25;font-weight:800}
+    .members{background:var(--fairy)}
+    .tier-grid{grid-template-columns:repeat(5,1fr)}
+    .tier{padding:22px 18px 18px;justify-content:space-between}
+    .tier h3{margin:0 0 12px;color:var(--madder);font-size:1.15rem;font-weight:900}
+    .tier .tier-price{font-size:1.8rem;font-weight:900;color:var(--wenge);margin-bottom:12px}
+    .tier p{margin:0;color:var(--wenge)}
+    .quote-section{padding:72px 0;background:var(--wenge);color:var(--champagne)}
+    .quote-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+    .quote-mark{color:var(--fairy);font-size:7rem;line-height:1;font-weight:900;transform:translateY(-10px)}
+    .quote-text{margin:0;max-width:760px;font-size:clamp(1.3rem,2vw,2rem);line-height:1.35;color:var(--champagne)}
+    .generator{background:var(--champagne)}
+    .generator-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+    .form-panel{padding:27px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.22)}
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .field{display:flex;flex-direction:column;gap:8px}
+    .field.full{grid-column:1/-1}
+    label{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--wenge)}
+    input,select{padding:12px 14px;border:1px solid rgba(120,92,97,.3);border-radius:12px;background:#fff;color:var(--wenge);font-size:1rem}
+    .preview-wrap{padding:18px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.08));box-shadow:0 12px 30px rgba(120,92,97,.08)}
+    .member-card{position:relative;padding:20px;border-radius:28px;border:2px solid rgba(158,24,43,.18);background:linear-gradient(135deg,#fff 0%,#f9e9ec 100%);box-shadow:0 18px 45px rgba(158,24,43,.08)}
+    .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}
+    .card-brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--madder)}
+    .card-brand svg{width:34px;height:34px}
+    .card-type{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--wenge);font-weight:800}
+    .card-name{font-size:1.8rem;line-height:1.1;color:var(--madder);font-weight:900;margin:8px 0 6px}
+    .card-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px;color:var(--wenge);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+    .card-content{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 16px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(120,92,97,.2)}
+    .card-content strong{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--wenge);opacity:.8}
+    .card-content span{font-size:1rem;color:var(--madder);font-weight:700}
+    .join{padding:75px 0;background:var(--fairy);text-align:center}
+    .join h2{margin:13px 0;color:var(--madder);font-size:clamp(2.5rem,5.5vw,4.4rem);line-height:1;font-weight:900}
+    .join p{max-width:570px;margin:0 auto 24px;font-size:1.1rem}
+    .footer{padding:26px 0 52px;background:var(--champagne)}
+    .footer-inner{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;border-top:1px solid rgba(120,92,97,.2);padding-top:22px}
+    .footer-brand{display:flex;flex-direction:column;gap:8px;font-weight:900;color:var(--madder);font-size:1.5rem}
+    .footer-brand small{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--wenge);font-weight:700}
+    .footer-note{max-width:520px;color:var(--wenge);font-size:.95rem}
+
+    @media(max-width:980px){
+      .hero-grid,.mission-grid,.generator-grid{grid-template-columns:1fr;gap:25px}
+      .tier-grid{grid-template-columns:repeat(3,1fr)}
+      .card-grid{grid-template-columns:repeat(3,1fr)}
+      .navlinks{gap:15px}
+      .navlinks a{font-size:.78rem}
+    }
+
+    @media(max-width:700px){
+      .shell{width:min(100% - 34px,560px)}
+      .topline{font-size:.56rem;letter-spacing:.07em}
+      .nav{height:68px}
+      .brand{font-size:1.35rem}
+      .brand-mark{width:37px;height:37px}
+      .menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1px solid rgba(120,92,97,.4);border-radius:12px;background:transparent;color:var(--madder);font-size:1.7rem;cursor:pointer}
+      .navlinks{display:none;position:absolute;top:68px;left:17px;right:17px;padding:18px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 28px rgba(120,92,97,.1);flex-direction:column;align-items:flex-start}
+      .navlinks.open{display:flex}
+      .hero{padding-top:48px}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .tier-grid,.card-grid,.form-grid{grid-template-columns:1fr}
+      .quote-inner,.footer-inner{flex-direction:column;align-items:flex-start}
+    }
+
+    @media(max-width:390px){
+      .form-grid{grid-template-columns:1fr}
+      .field.full{grid-column:auto}
+      .card-meta{gap:7px}
+      .card-meta strong{font-size:.68rem}
+      .card-type{font-size:.5rem}
+      .card-content{grid-template-columns:1fr}
+    }
+
+    @media print{
+      body *{visibility:hidden}
+      .member-card,.member-card *{visibility:visible}
+      .member-card{position:fixed;left:0;top:0;width:100%;box-shadow:none}
+      .preview-wrap{border:0;padding:0}
+      .preview-area{padding:0}
+    }
   </style>
 </head>
 <body>
   <div class="topline">Association des GOs Matérialistes &nbsp;·&nbsp; Fondée en 2026</div>
   <header class="header"><div class="shell nav">
-    <a class="brand" href="#accueil" aria-label="AGOMA, accueil"><svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 52h48M13 47h38L32 10 13 47Z" stroke="#9E182B" stroke-width="2"/><path d="m22 38 10-18 10 18H22Z" fill="#F9CBD6" stroke="#9E182B" stroke-width="2"/><circle cx="32" cy="8" r="3" fill="#9E182B"/><path d="M25 47v5m7-5v5m7-5v5" stroke="#9E182B" stroke-width="2"/></svg><span>AGOMA<small>Association des GOs Matérialistes</small></span></a>
+    <a class="brand" href="#accueil" aria-label="AGOMA, accueil"><svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 52h48M13 47h38L32 10 13 47Z" stroke="#9E182B" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="22" r="5" fill="#9E182B"/></svg>AGOMA</a>
     <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="navlinks" aria-label="Navigation principale"><a href="#mission">Notre mission</a><a href="#adhesion">Adhésion</a><a href="#membres">Membres</a><a href="#carte">Carte de membre</a><a class="button" href="#carte">Rejoindre AGOMA <span>↗</span></a></nav>
+    <nav class="navlinks" aria-label="Navigation principale"><a href="#mission">Notre mission</a><a href="#adhesion">Adhésion</a><a href="#membres">Membres</a><a href="#carte">Carte de membre</a><a href="#rejoindre">Rejoindre</a></nav>
   </div></header>
   <main>
-    <section class="hero" id="accueil"><div class="shell hero-grid"><div><div class="eyebrow">Une association d'exception</div><h1 class="serif">L'élégance<br>de <em>prévoir.</em></h1><p class="hero-copy">Nous cultivons une conviction simple : le cœur a ses raisons, mais votre compte mérite aussi toute votre attention.</p><div class="hero-actions"><a class="button" href="#carte">Adhérer à AGOMA <span>↗</span></a><a class="button outline" href="#mission">Découvrir l'association</a></div><p class="hero-note"><span>Notre engagement :</span> préserver la paix, sous toutes ses formes.</p></div>
-      <div class="seal-wrap"><div class="seal"><div class="seal-inner"><svg class="seal-crown" viewBox="0 0 100 80" fill="none" aria-hidden="true"><path d="M12 59 20 24l20 19 10-30 11 30 20-19 8 35H12Z" fill="#F9CBD6" stroke="#9E182B" stroke-width="3" stroke-linejoin="round"/><path d="M17 66h66M22 73h56" stroke="#9E182B" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="21" r="4" fill="#9E182B"/><circle cx="50" cy="10" r="4" fill="#9E182B"/><circle cx="81" cy="21" r="4" fill="#9E182B"/></svg><div class="seal-title">AGOMA</div><div class="seal-sub">Dignité · Vision · Prospérité</div></div></div><div class="seal-caption">« Que le goumin soit tout, sauf financier. »</div></div>
+    <section class="hero" id="accueil"><div class="shell hero-grid"><div><div class="eyebrow">Une association d'exception</div><h1 class="serif">L'élégance<br>de <em>prévoir.</em></h1><p>AGOMA accompagne les membres qui veulent conjuguer stabilité, élégance et liberté financière sans que la vie sentimentale ne devienne un fardeau comptable.</p><div class="hero-actions"><a class="btn btn-primary" href="#adhesion">Adhérer</a><a class="btn btn-secondary" href="#carte">Voir la carte</a></div></div>
+      <div class="seal-wrap"><div class="seal"><div class="seal-inner"><svg class="seal-crown" viewBox="0 0 100 80" fill="none" aria-hidden="true"><path d="M12 59 20 24l20 19 10-30 11 30 20-19 8 35H12Z" stroke="#9E182B" stroke-width="4" stroke-linejoin="round"/><path d="M25 32h50" stroke="#9E182B" stroke-width="4" stroke-linecap="round"/></svg></div></div></div>
     </div></section>
     <section class="mission" id="mission"><div class="shell mission-grid"><div><div class="eyebrow">Notre mission</div><h2 class="serif" style="font-size:clamp(2.5rem,5vw,4rem);color:var(--madder);line-height:1.04;margin:15px 0">La sérénité n'est pas un luxe.</h2><p>AGOMA œuvre pour la préservation du bien-être matériel de ses membres afin que les difficultés sentimentales n'entraînent jamais de déséquilibres financiers.</p><div class="mission-quote">« Que le goumin soit tout, sauf financier. »</div></div><div><div class="eyebrow" style="margin-bottom:17px">Nos valeurs fondatrices</div><div class="values"><div class="value"><strong>01 · Stabilité</strong><span>Garder le cap, même quand le cœur tangue.</span></div><div class="value"><strong>02 · Élégance</strong><span>La distinction dans chaque décision.</span></div><div class="value"><strong>03 · Opportunité</strong><span>Savoir reconnaître les gestes qui comptent.</span></div><div class="value"><strong>04 · Responsabilité</strong><span>Prendre soin de soi, avec discernement.</span></div><div class="value"><strong>05 · Prospérité</strong><span>Faire grandir ce qui nous fait du bien.</span></div></div></div></div></section>
     <div class="stats"><div class="shell stats-grid"><div class="stat"><strong>2 480</strong><span>Membres engagés</span></div><div class="stat"><strong>18</strong><span>Antennes régionales</span></div><div class="stat"><strong>94 %</strong><span>Paix préservée</span></div><div class="stat"><strong>0</strong><span>Factures sentimentales</span></div></div></div>
     <section class="conditions" id="adhesion"><div class="shell"><div class="section-head"><div class="eyebrow">Conditions d'adhésion</div><h2 class="serif">Les bonnes intentions<br>ne suffisent pas.</h2><p>Rejoindre AGOMA, c'est faire le choix d'une communauté de personnes aussi attentives à leur avenir qu'à leur élégance.</p></div><div class="card-grid"><article class="condition-card"><span class="number">01</span><h3>Aimer les cadeaux utiles</h3></article><article class="condition-card"><span class="number">02</span><h3>Préserver sa paix financière</h3></article><article class="condition-card"><span class="number">03</span><h3>Favoriser les opportunités stratégiques</h3></article><article class="condition-card"><span class="number">04</span><h3>Respecter le règlement intérieur</h3></article><article class="condition-card"><span class="number">05</span><h3>Contribuer au rayonnement d'AGOMA</h3></article></div></div></section>
-    <section class="members" id="membres"><div class="shell"><div class="section-head"><div class="eyebrow">Nos catégories</div><h2 class="serif">Une place à votre mesure.</h2><p>Chaque parcours est unique. Notre reconnaissance, elle, se décline en cinq distinctions soigneusement pensées.</p></div><div class="tier-grid"><article class="tier"><span class="tier-badge">Le premier pas</span><h3>Sympathisant</h3><p>Un regard éclairé sur nos valeurs, et déjà une certaine lucidité.</p><ul><li>Accès aux actualités</li><li>Invitation aux rencontres ouvertes</li><li>Guide de sérénité initial</li></ul></article><article class="tier"><span class="tier-badge">Le cercle engagé</span><h3>Actif</h3><p>La force tranquille de celles et ceux qui font vivre le collectif.</p><ul><li>Participation aux activités</li><li>Réseau des antennes</li><li>Badge officiel AGOMA</li></ul></article><article class="tier"><span class="tier-badge">Distinction</span><h3>Premium</h3><p>Une implication remarquée, un sens des priorités affirmé.</p><ul><li>Rencontres privées</li><li>Accès prioritaire aux événements</li><li>Conseil de prospérité annuel</li></ul></article><article class="tier"><span class="tier-badge">Excellence</span><h3>Diamant</h3><p>Une présence rare, une sérénité devenue art de vivre.</p><ul><li>Salon des membres distingués</li><li>Accompagnement personnalisé</li><li>Écrin de reconnaissance exclusif</li></ul></article><article class="tier"><span class="tier-badge">Depuis les origines</span><h3>Membre Fondateur</h3><p>Celles et ceux qui ont posé les premières pierres — et gardé les reçus.</p><ul><li>Siège honorifique</li><li>Archives et insigne fondateur</li><li>Reconnaissance perpétuelle</li></ul></article></div></div></section>
-    <section class="quote-section" aria-label="Citation inspirante"><div class="shell quote-inner"><div><div class="quote-mark">“</div><p class="quote-text" id="quoteText">La paix intérieure est précieuse. La paix intérieure avec un budget équilibré, inestimable.</p><div class="quote-source" id="quoteSource">Pensée du comité de sagesse</div></div><button class="quote-button" id="newQuote" aria-label="Afficher une autre citation">↻</button></div></section>
-    <section class="generator" id="carte"><div class="shell"><div class="section-head"><div class="eyebrow">Votre distinction</div><h2 class="serif">Votre carte. Votre emblème.</h2><p>Personnalisez votre carte de membre AGOMA et emportez votre appartenance avec vous.</p></div><div class="generator-grid"><form class="form-panel" id="memberForm"><h3>Créer ma carte</h3><div class="form-grid"><div class="field"><label for="firstName">Prénom</label><input id="firstName" name="firstName" placeholder="Ex. Aïssata" required></div><div class="field"><label for="lastName">Nom</label><input id="lastName" name="lastName" placeholder="Ex. Kouamé" required></div><div class="field"><label for="gender">Sexe</label><select id="gender" name="gender" required><option value="">Sélectionner</option><option>Féminin</option><option>Masculin</option><option>Préfère ne pas préciser</option></select></div><div class="field"><label for="memberNumber">Numéro de membre</label><input id="memberNumber" name="memberNumber" placeholder="AG-2026-001" required></div><div class="field full"><label for="category">Catégorie</label><select id="category" name="category"><option>Sympathisant</option><option>Actif</option><option>Premium</option><option>Diamant</option><option>Membre Fondateur</option></select></div><div class="field full"><label for="photo">Photo (facultative)</label><input id="photo" name="photo" type="file" accept="image/*"><span class="form-hint">Votre image reste dans votre navigateur et n'est envoyée nulle part.</span></div></div><button class="button" type="submit">Actualiser ma carte <span>↗</span></button><p class="form-hint">Carte de démonstration — les informations saisies ne sont pas enregistrées.</p></form>
-      <div><div class="preview-wrap"><article class="member-card" id="memberCard" aria-label="Aperçu de la carte de membre"><div class="card-top"><div class="card-brand"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="m9 44 6-27 16 15 7-23 8 23 10-15 6 27H9Z" fill="#F9CBD6" stroke="#F2E0D2" stroke-width="2"/><path d="M13 51h38M18 57h28" stroke="#F2E0D2" stroke-width="2"/></svg>AGOMA</div><span class="card-type">Carte de membre</span></div><div class="card-content"><div class="photo-frame" id="photoFrame"><span id="photoInitial">A</span></div><div><h3 class="card-name" id="cardName">Votre nom ici</h3><div class="card-meta"><div><span>N° de membre</span><strong id="cardNumber">AG-2026-001</strong></div><div><span>Catégorie</span><strong id="cardCategory">Sympathisant</strong></div><div class="card-gender"><span>Membre</span><strong id="cardGender">AGOMA</strong></div><div><span>Statut</span><strong>En règle</strong></div></div></div></div><div class="card-bottom"><span class="card-slogan">Que le goumin soit tout, sauf financier.</span><b>✦ AGOMA ✦</b></div></article></div><div class="preview-actions"><button class="button" id="printCard" type="button">Imprimer / Enregistrer PDF</button><button class="button outline" id="resetCard" type="button">Réinitialiser</button></div><p class="fineprint">Conseil : dans la fenêtre d'impression, choisissez « Enregistrer au format PDF » pour conserver votre carte.</p></div>
-    </div></div></section>
-    <section class="join"><div class="shell"><div class="eyebrow" style="justify-content:center">Le comité vous reçoit</div><h2 class="serif">Le cœur est libre.<br>Le budget aussi.</h2><p>Rejoignez une communauté où l'on cultive le discernement, les liens précieux et une certaine tranquillité d'esprit.</p><a class="button" href="#carte">Adhérer à AGOMA <span>↗</span></a></div></section>
+    <section class="members" id="membres"><div class="shell"><div class="section-head"><div class="eyebrow">Nos catégories</div><h2 class="serif">Une place à votre mesure.</h2><p>Chaque parcours est pensé pour s'accorder à votre rythme, vos priorités et votre façon d'aimer sans nuire à votre budget.</p></div><div class="tier-grid"><article class="tier"><h3>GO initiaux</h3><div class="tier-price">29 €</div><p>Pour tester le cadre sans compromettre son équilibre.</p></article><article class="tier"><h3>GO régulier</h3><div class="tier-price">59 €</div><p>Pour rester solide sans jamais perdre le cap.</p></article><article class="tier"><h3>GO associé</h3><div class="tier-price">99 €</div><p>Pour bénéficier d'une vraie présence au cœur du réseau.</p></article><article class="tier"><h3>GO résident</h3><div class="tier-price">149 €</div><p>Pour participer aux grandes décisions sans afreux compromis.</p></article><article class="tier"><h3>GO d’honneur</h3><div class="tier-price">249 €</div><p>Pour célébrer la stabilité avec élégance et conscience.</p></article></div></div></section>
+    <section class="quote-section" aria-label="Citation inspirante"><div class="shell quote-inner"><div><div class="quote-mark">“</div></div><p class="quote-text" id="quoteText">La paix intérieure est précieuse. La paix intérieure avec un budget équilibré, inestimable.</p></div></section>
+    <section class="generator" id="carte"><div class="shell"><div class="section-head"><div class="eyebrow">Votre distinction</div><h2 class="serif">Votre carte. Votre emblème.</h2><p>Personnalisez votre carte pour refléter votre rang, votre identité et vos principes sans jamais perdre votre calme.</p></div><div class="generator-grid"><div class="form-panel"><form id="memberForm"><div class="form-grid"><div class="field"><label for="firstName">Prénom</label><input id="firstName" name="firstName" type="text" value="Ariane"></div><div class="field"><label for="lastName">Nom</label><input id="lastName" name="lastName" type="text" value="Bourgeois"></div><div class="field"><label for="gender">Genre</label><select id="gender" name="gender"><option value="Femme">Femme</option><option value="Homme">Homme</option><option value="Autre">Autre</option></select></div><div class="field"><label for="number">N° membre</label><input id="number" name="number" type="text" value="AG-2048"></div><div class="field full"><label for="category">Catégorie</label><select id="category" name="category"><option value="GO régulier">GO régulier</option><option value="GO associé">GO associé</option><option value="GO résident">GO résident</option><option value="GO d'honneur">GO d'honneur</option></select></div></div><button class="btn btn-primary" type="submit" style="margin-top:18px">Actualiser</button></form></div><div class="preview-wrap"><article class="member-card" id="memberCard" aria-label="Aperçu de la carte de membre"><div class="card-top"><div class="card-brand"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 52h48M13 47h38L32 10 13 47Z" stroke="#9E182B" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="22" r="5" fill="#9E182B"/></svg><span>AGOMA</span></div><div class="card-type" id="cardCategory">GO régulier</div></div><div class="card-name" id="cardName">Ariane Bourgeois</div><div class="card-meta"><strong id="cardGender">Femme</strong><strong id="cardNumber">AG-2048</strong></div><div class="card-content"><div><strong>Rang</strong><span>GO</span></div><div><strong>Valeur</strong><span>Stabilité</span></div><div><strong>Code</strong><span>AGOMA</span></div><div><strong>Statut</strong><span>Actif</span></div></div></article></div></div></div></section>
+    <section class="join" id="rejoindre"><div class="shell"><div class="eyebrow" style="justify-content:center">Le comité vous reçoit</div><h2 class="serif">Le cœur est libre.<br>Le budget aussi.</h2><p>Rejoignez AGOMA pour faire entrer plus de clarté dans votre vie, sans sacrifier votre capacité à aimer, à prospérer et à avancer sereinement.</p><a class="btn btn-primary" href="#accueil">Faire sa demande</a></div></section>
   </main>
-  <footer class="footer"><div class="shell footer-inner"><div class="footer-brand">AGOMA<small>Association des GOs Matérialistes · Fondée en 2026</small></div><div class="footer-note">Une association fictive, une philosophie bien réelle.<br><em>Que le goumin soit tout, sauf financier.</em></div></div></footer>
+  <footer class="footer"><div class="shell footer-inner"><div class="footer-brand">AGOMA<small>Association des GOs Matérialistes · Fondée en 2026</small></div><div class="footer-note">Une association fondée pour préserver les faits, les émotions et les comptes dans un même équilibre délicat.</div></div></footer>
   <script>
-    const menuButton=document.querySelector('.menu-toggle');const nav=document.querySelector('.navlinks');menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰'}));
-    const form=document.getElementById('memberForm');const first=document.getElementById('firstName');const last=document.getElementById('lastName');const gender=document.getElementById('gender');const number=document.getElementById('memberNumber');const category=document.getElementById('category');const photo=document.getElementById('photo');let photoData='';
-    function updateCard(){const full=[first.value.trim(),last.value.trim()].filter(Boolean).join(' ');document.getElementById('cardName').textContent=full||'Votre nom ici';document.getElementById('cardNumber').textContent=number.value.trim()||'AG-2026-001';document.getElementById('cardCategory').textContent=category.value;document.getElementById('cardGender').textContent=gender.value||'AGOMA';document.getElementById('photoInitial').textContent=(first.value.trim().charAt(0)||'A').toUpperCase();const frame=document.getElementById('photoFrame');frame.querySelector('img')?.remove();document.getElementById('photoInitial').hidden=!!photoData;if(photoData){const img=document.createElement('img');img.src=photoData;img.alt='Photo du membre';frame.appendChild(img)}}
-    form.addEventListener('submit',event=>{event.preventDefault();updateCard()});[first,last,gender,number,category].forEach(field=>field.addEventListener('input',updateCard));photo.addEventListener('change',()=>{const file=photo.files&&photo.files[0];if(!file){photoData='';updateCard();return}if(!file.type.startsWith('image/'))return;const reader=new FileReader();reader.onload=()=>{photoData=reader.result;updateCard()};reader.readAsDataURL(file)});document.getElementById('printCard').addEventListener('click',()=>window.print());document.getElementById('resetCard').addEventListener('click',()=>{form.reset();photoData='';updateCard()});
-    const quotes=[['La paix intérieure est précieuse. La paix intérieure avec un budget équilibré, inestimable.','Pensée du comité de sagesse'],['L’amour est aveugle ; votre relevé bancaire, lui, voit très clair.','Extrait du manuel de sérénité'],['Un grand cœur, oui. Un découvert autorisé, pas nécessairement.','Conseil de nos membres'],['Le bonheur ne s’achète pas. La tranquillité qui l’accompagne mérite, elle, une bonne gestion.','Chroniques AGOMA'],['Dans le doute, choisissez la paix. Et demandez toujours un reçu.','Sagesse populaire, édition AGOMA']];let quoteIndex=0;document.getElementById('newQuote').addEventListener('click',()=>{let next;do{next=Math.floor(Math.random()*quotes.length)}while(next===quoteIndex);quoteIndex=next;document.getElementById('quoteText').textContent=quotes[next][0];document.getElementById('quoteSource').textContent=quotes[next][1]});
+    const menuButton=document.querySelector('.menu-toggle');
+    const nav=document.querySelector('.navlinks');
+    menuButton.addEventListener('click',()=>{
+      const open=nav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded',String(open));
+    });
+
+    const form=document.getElementById('memberForm');
+    const first=document.getElementById('firstName');
+    const last=document.getElementById('lastName');
+    const gender=document.getElementById('gender');
+    const number=document.getElementById('number');
+    const category=document.getElementById('category');
+
+    function updateCard(){
+      const full=[first.value.trim(),last.value.trim()].filter(Boolean).join(' ');
+      document.getElementById('cardName').textContent=full||'Votre nom ici';
+      document.getElementById('cardGender').textContent=gender.value||'Femme';
+      document.getElementById('cardNumber').textContent=number.value||'AG-0000';
+      document.getElementById('cardCategory').textContent=category.value||'GO régulier';
+    }
+
+    form.addEventListener('submit',event=>{event.preventDefault();updateCard();});
+    [first,last,gender,number,category].forEach(field=>field.addEventListener('input',updateCard));
+
+    const quotes=[
+      ['La paix intérieure est précieuse. La paix intérieure avec un budget équilibré, inestimable.','Pensée du comité de sagesse'],
+      ['L’amour est aveugle ; votre relevé bancaire, lui, est très lucide.','Conseil discret'],
+      ['Le cœur a besoin de liberté, pas de découvert.','Avis de la commission']
+    ];
+
+    let quoteIndex=0;
+    setInterval(()=>{
+      quoteIndex=(quoteIndex+1)%quotes.length;
+      const [text, author]=quotes[quoteIndex];
+      document.getElementById('quoteText').textContent=text + ' — ' + author;
+    },5000);
+    updateCard();
   </script>
 </body>
 </html>
