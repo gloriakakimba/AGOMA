@@ -304,6 +304,7 @@ a:has(.brand-logo) {
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
+	  <script>const numeroCarte = "AGOMA-" + crypto.randomUUID().substring(0, 8).toUpperCase(); document.getElementById("numero-carte").textContent = numeroCarte;</script>
     const menuButton=document.querySelector('.menu-toggle');
     const nav=document.querySelector('.navlinks');
     menuButton.addEventListener('click',()=>{
