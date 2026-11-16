@@ -28,7 +28,7 @@
     .quote-section{padding:72px 0;background:var(--wenge);color:var(--champagne)}.quote-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}.quote-mark{color:var(--fairy);font-size:7rem;line-height:1;font-weight:900;transform:translateY(-10px)}.quote-text{margin:0;max-width:760px;font-size:clamp(1.3rem,2vw,2rem);line-height:1.35;color:var(--champagne)}
     .generator{background:var(--champagne)}.generator-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}.form-panel{padding:27px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.22)}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}label{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--wenge)}input,select{padding:12px 14px;border:1px solid rgba(120,92,97,.3);border-radius:12px;background:#fff;color:var(--wenge);font-size:1rem}
     .preview-wrap{padding:18px;border-radius:28px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.08));box-shadow:0 12px 30px rgba(120,92,97,.08)}.member-card{position:relative;padding:20px;border-radius:28px;border:2px solid rgba(158,24,43,.18);background:linear-gradient(135deg,#fff 0%,#f9e9ec 100%);box-shadow:0 18px 45px rgba(158,24,43,.08);cursor:zoom-in}.member-card.madder{background:var(--madder);color:#fff;border-color:rgba(255,255,255,.18)}.member-card.madder .card-brand,.member-card.madder .card-name,.member-card.madder .card-type,.member-card.madder .card-meta strong,.member-card.madder .card-meta,.member-card.madder .card-content strong,.member-card.madder .card-content span{color:#fff}
-    .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}.card-brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--madder)}.card-logo{width:116px;/*height:34px;*/object-fit:contain;display:block}.card-type{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--wenge);font-weight:800}.card-photo{width:110px;height:110px;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.card-photo img{width:100%;height:100%;object-fit:cover;display:block}.card-photo.placeholder{background:rgba(255,255,255,.08);color:#fff}
+    .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin-bottom:18px}.card-brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--madder)}.card-logo{width:116px;height:34px;object-fit:contain;display:block}.card-type{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--wenge);font-weight:800}.card-photo{width:110px;height:110px;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.card-photo img{width:100%;height:100%;object-fit:cover;display:block}.card-photo.placeholder{background:rgba(255,255,255,.08);color:#fff}
     .card-name{font-size:1.8rem;line-height:1.1;color:var(--madder);font-weight:900;margin:8px 0 6px}.card-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px;color:var(--wenge);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700}.card-meta strong{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(120,92,97,.15)}.card-content{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 16px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(120,92,97,.2)}.card-content strong{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--wenge);opacity:.8}.card-content span{font-size:1rem;color:var(--madder);font-weight:700}
     .card-qr{display:flex;align-items:center;gap:12px;margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.25);color:#fff}.card-qr img{display:block;width:78px;height:78px;object-fit:contain;padding:4px;border-radius:8px;background:#fff}.card-qr span{color:#fff;font-size:.75rem}.card-preview-hint{margin:12px 0 0;text-align:center;color:var(--wenge);font-size:.8rem}
     .join{padding:75px 0;background:var(--fairy);text-align:center}.join h2{margin:13px 0;color:var(--madder);font-size:clamp(2.5rem,5.5vw,4.4rem);line-height:1;font-weight:900}.join p{max-width:570px;margin:0 auto 24px;font-size:1.1rem}.footer{padding:26px 0 52px;background:var(--champagne)}.footer-inner{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;border-top:1px solid rgba(120,92,97,.2);padding-top:22px}.footer-brand{display:flex;flex-direction:column;gap:8px;font-weight:900;color:var(--madder);font-size:1.5rem}.footer-brand small{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--wenge);font-weight:700}.footer-note{max-width:520px;color:var(--wenge);font-size:.95rem}
@@ -59,256 +59,41 @@ a:has(.brand-logo) {
   <header class="header"><div class="shell nav">
     <!-- <a class="brand" href="#accueil" aria-label="AGOMA, accueil"> -->
     
-	<img class="brand-logo" src="Logob.png" alt="Logo AGOMA" onerror="this.hidden=true"></a>
+	<img class="brand-logo" src="Logo.png" alt="Logo AGOMA" onerror="this.hidden=true"></a>
     <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="navlinks" aria-label="Navigation principale">
-		<a href="#mission">Notre mission</a>
-		<a href="#adhesion">Adhésion</a>
-		<a href="#membres">Membres</a>
-		<a href="#carte">Carte de membre</a>
-		<a href="#rejoindre">Rejoindre</a>
-	</nav>
+    <nav class="navlinks" aria-label="Navigation principale"><a href="#mission">Notre mission</a><a href="#adhesion">Adhésion</a><a href="#membres">Membres</a><a href="#carte">Carte de membre</a><a href="#rejoindre">Rejoindre</a></nav>
   </div></header>
   <main>
-    <section class="hero" id="accueil">
-		<div class="shell hero-grid">
-			<div><div class="eyebrow">Une association d'exception</div>
-				<h1 class="serif">L'élégance<br>de <em>prévoir.</em></h1>
-				<p>AGOMA accompagne les membres qui veulent conjuguer stabilité, élégance et liberté financière sans que la vie sentimentale ne devienne un fardeau comptable.</p>
-				<div class="hero-actions">
-					<a class="btn btn-primary" href="#adhesion">Adhérer</a>
-					<a class="btn btn-secondary" href="#carte">Voir la carte</a>
-				</div>
-			</div>
-      <div class="seal-wrap">
-		  <div class="seal">
-			  <div class="seal-inner">
-				  <svg class="seal-crown" viewBox="0 0 100 80" fill="none" aria-hidden="true">
-					  <path d="M12 59 20 24l20 19 10-30 11 30 20-19 8 35H12Z" stroke="#9E182B" stroke-width="4" stroke-linejoin="round"/>
-					  <path d="M25 32h50" stroke="#9E182B" stroke-width="4" stroke-linecap="round"/>
-				  </svg>
-			  </div>
-		  </div>
-	  </div>
-    </div>
-	</section>
-    <section class="mission" id="mission">
-		<div class="shell mission-grid">
-			<div>
-				<div class="eyebrow">Notre mission</div>
-				<h2 class="serif" style="font-size:clamp(2.5rem,5vw,4rem);color:var(--madder);line-height:1.04;margin:15px 0">La sérénité n'est pas un luxe.</h2>
-				<p>AGOMA œuvre pour la préservation du bien-être matériel de ses membres afin que les difficultés sentimentales n'entraînent jamais de déséquilibres financiers.</p>
-				<div class="mission-quote">« Que le goumin soit tout, sauf financier. »</div>
-			</div>
-			<div>
-				<div class="eyebrow" style="margin-bottom:17px">Nos valeurs fondatrices</div>
-				<div class="values">
-					<div class="value">
-						<strong>01 · Stabilité</strong>
-						<span>Garder le cap, même quand le cœur tangue.</span>
-					</div>
-					<div class="value">
-						<strong>02 · Élégance</strong>
-						<span>La distinction dans chaque décision.</span>
-					</div><div class="value">
-						<strong>03 · Opportunité</strong>
-						<span>Savoir reconnaître les gestes qui comptent.</span>
-					</div><div class="value">
-						<strong>04 · Responsabilité</strong>
-						<span>Prendre soin de soi, avec discernement.</span>
-					</div><div class="value">
-						<strong>05 · Prospérité</strong>
-						<span>Faire grandir ce qui nous fait du bien.</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    <div class="stats">
-		<div class="shell stats-grid">
-			<div class="stat">
-				<strong>+ de 10</strong>
-				<span>Membres engagés</span>
-			</div>
-			<div class="stat">
-				<strong>3</strong>
-				<span>Antennes régionales</span>
-			</div>
-			<div class="stat">
-				<strong>94 %</strong>
-				<span>Paix préservée</span>
-			</div>
-			<div class="stat">
-				<strong>0</strong>
-				<span>Factures sentimentales</span>
-			</div>
-		</div>
+    <section class="hero" id="accueil"><div class="shell hero-grid"><div><div class="eyebrow">Une association d'exception</div><h1 class="serif">L'élégance<br>de <em>prévoir.</em></h1><p>AGOMA accompagne les membres qui veulent conjuguer stabilité, élégance et liberté financière sans que la vie sentimentale ne devienne un fardeau comptable.</p><div class="hero-actions"><a class="btn btn-primary" href="#adhesion">Adhérer</a><a class="btn btn-secondary" href="#carte">Voir la carte</a></div></div>
+      <div class="seal-wrap"><div class="seal"><div class="seal-inner"><svg class="seal-crown" viewBox="0 0 100 80" fill="none" aria-hidden="true"><path d="M12 59 20 24l20 19 10-30 11 30 20-19 8 35H12Z" stroke="#9E182B" stroke-width="4" stroke-linejoin="round"/><path d="M25 32h50" stroke="#9E182B" stroke-width="4" stroke-linecap="round"/></svg></div></div></div>
+    </div></section>
+    <section class="mission" id="mission"><div class="shell mission-grid"><div><div class="eyebrow">Notre mission</div><h2 class="serif" style="font-size:clamp(2.5rem,5vw,4rem);color:var(--madder);line-height:1.04;margin:15px 0">La sérénité n'est pas un luxe.</h2><p>AGOMA œuvre pour la préservation du bien-être matériel de ses membres afin que les difficultés sentimentales n'entraînent jamais de déséquilibres financiers.</p><div class="mission-quote">« Que le goumin soit tout, sauf financier. »</div></div><div><div class="eyebrow" style="margin-bottom:17px">Nos valeurs fondatrices</div><div class="values"><div class="value"><strong>01 · Stabilité</strong><span>Garder le cap, même quand le cœur tangue.</span></div><div class="value"><strong>02 · Élégance</strong><span>La distinction dans chaque décision.</span></div><div class="value"><strong>03 · Opportunité</strong><span>Savoir reconnaître les gestes qui comptent.</span></div><div class="value"><strong>04 · Responsabilité</strong><span>Prendre soin de soi, avec discernement.</span></div><div class="value"><strong>05 · Prospérité</strong><span>Faire grandir ce qui nous fait du bien.</span></div></div></div></div></section>
+    <div class="stats"><div class="shell stats-grid"><div class="stat"><strong>2 480</strong><span>Membres engagés</span></div><div class="stat"><strong>18</strong><span>Antennes régionales</span></div><div class="stat"><strong>94 %</strong><span>Paix préservée</span></div><div class="stat"><strong>0</strong><span>Factures sentimentales</span></div></div></div>
+    <section class="conditions" id="adhesion"><div class="shell"><div class="section-head"><div class="eyebrow">Conditions d'adhésion</div><h2 class="serif">Les bonnes intentions<br>ne suffisent pas.</h2><p>Rejoindre AGOMA, c'est faire le choix d'une communauté de personnes aussi attentives à leur avenir qu'à leur élégance.</p></div><div class="card-grid"><article class="condition-card"><span class="number">01</span><h3>Aimer les cadeaux utiles</h3></article><article class="condition-card"><span class="number">02</span><h3>Préserver sa paix financière</h3></article><article class="condition-card"><span class="number">03</span><h3>Favoriser les opportunités stratégiques</h3></article><article class="condition-card"><span class="number">04</span><h3>Respecter le règlement intérieur</h3></article><article class="condition-card"><span class="number">05</span><h3>Contribuer au rayonnement d'AGOMA</h3></article></div></div></section>
+    <section class="members" id="membres"><div class="shell"><div class="section-head"><div class="eyebrow">Nos catégories</div><h2 class="serif">Une place à votre mesure.</h2><p>Chaque parcours est pensé pour s'accorder à votre rythme, vos priorités et votre façon d'aimer sans nuire à votre budget.</p></div><div class="tier-grid"><article class="tier"><h3>GO initiaux</h3><div class="tier-price">29 crédits</div><p>Pour tester le cadre sans compromettre son équilibre.</p></article><article class="tier"><h3>GO régulier</h3><div class="tier-price">59 crédits</div><p>Pour rester solide sans jamais perdre le cap.</p></article><article class="tier"><h3>GO associé</h3><div class="tier-price">99 crédits</div><p>Pour bénéficier d'une vraie présence au cœur du réseau.</p></article><article class="tier"><h3>GO résident</h3><div class="tier-price">149 crédits</div><p>Pour participer aux grandes décisions sans afreux compromis.</p></article><article class="tier"><h3>GO d’honneur</h3><div class="tier-price">249 crédits</div><p>Pour célébrer la stabilité avec élégance et conscience.</p></article></div></div></section>
+    <section class="quote-section" aria-label="Citation inspirante"><div class="shell quote-inner"><div><div class="quote-mark">“</div></div><p class="quote-text" id="quoteText">La paix intérieure est précieuse. La paix intérieure avec un budget équilibré, inestimable.</p></div></section>
+    <section class="generator" id="carte"><div class="shell"><div class="section-head"><div class="eyebrow">Votre distinction</div><h2 class="serif">Votre carte. Votre emblème.</h2><p>Personnalisez votre carte pour refléter votre rang, votre identité et vos principes sans jamais perdre votre calme.</p></div><div class="generator-grid"><div class="form-panel"><form id="memberForm"><div class="form-grid">
+	<div class="field">
+	<label for="firstName">Prénom</label>
+	<input id="firstName" name="firstName" type="text" value="Ariane">
 	</div>
-    <section class="conditions" id="adhesion">
-		<div class="shell">
-			<div class="section-head">
-				<div class="eyebrow">Conditions d'adhésion</div>
-				<h2 class="serif">Les bonnes intentions<br>ne suffisent pas.</h2>
-				<p>Rejoindre AGOMA, c'est faire le choix d'une communauté de personnes aussi attentives à leur avenir qu'à leur élégance.</p>
-			</div>
-			<div class="card-grid">
-				<article class="condition-card">
-					<span class="number">01</span>
-					<h3>Aimer les cadeaux utiles</h3>
-				</article>
-				<article class="condition-card">
-					<span class="number">02</span>
-					<h3>Préserver sa paix financière</h3>
-				</article>
-				<article class="condition-card">
-					<span class="number">03</span>
-					<h3>Favoriser les opportunités stratégiques</h3>
-				</article>
-				<article class="condition-card">
-					<span class="number">04</span>
-					<h3>Respecter le règlement intérieur</h3>
-				</article>
-				<article class="condition-card">
-					<span class="number">05</span>
-					<h3>Contribuer au rayonnement d'AGOMA</h3>
-				</article>
-			</div>
-		</div>
-	</section>
-    <section class="members" id="membres">
-		<div class="shell">
-			<div class="section-head">
-				<div class="eyebrow">Nos catégories</div>
-				<h2 class="serif">Une place à votre mesure.</h2>
-				<p>Chaque parcours est pensé pour s'accorder à votre rythme, vos priorités et votre façon d'aimer sans nuire à votre budget.</p>
-			</div>
-			<div class="tier-grid">
-				<article class="tier">
-					<h3>GO initiale</h3>
-					<div class="tier-price">29 crédits</div>
-					<p>Pour tester le cadre sans compromettre son équilibre.</p>
-				</article>
-				<article class="tier">
-					<h3>GO régulière</h3>
-					<div class="tier-price">59 crédits</div>
-					<p>Pour rester solide sans jamais perdre le cap.</p>
-				</article>
-				<article class="tier">
-					<h3>GO associée</h3>
-					<div class="tier-price">99 crédits</div>
-					<p>Pour bénéficier d'une vraie présence au cœur du réseau.</p>
-				</article>
-				<article class="tier">
-					<h3>GO résidente</h3>
-					<div class="tier-price">149 crédits</div>
-					<p>Pour participer aux grandes décisions sans afreux compromis.</p>
-				</article>
-				<article class="tier">
-					<h3>GO d’honneur</h3>
-					<div class="tier-price">249 crédits</div>
-					<p>Pour célébrer la stabilité avec élégance et conscience.</p>
-				</article>
-			</div>
-		</div>
-	</section>
-    <section class="quote-section" aria-label="Citation inspirante">
-		<div class="shell quote-inner">
-			<div>
-				<div class="quote-mark">“</div>
-		</div>
-			<p class="quote-text" id="quoteText">La paix intérieure est précieuse. La paix intérieure avec un budget équilibré, inestimable.</p>
-		</div>
-	</section>
-    <section class="generator" id="carte">
-		<div class="shell">
-			<div class="section-head">
-				<div class="eyebrow">Votre distinction</div>
-				<h2 class="serif">Votre carte. Votre emblème.</h2>
-				<p>Personnalisez votre carte pour refléter votre rang, votre identité et vos principes sans jamais perdre votre calme.</p>
-			</div>
-			<div class="generator-grid">
-				<div class="form-panel">
-					<form id="memberForm">
-						<div class="form-grid">
-							<div class="field">
-								<label for="firstName">Prénom</label>
-								<input id="firstName" name="firstName" type="text" value="Votre prénom">
-							</div>
-							<div class="field">
-								<label for="lastName">Nom</label>
-								<input id="lastName" name="lastName" type="text" value="Votre NOM">
-							</div>
-							<div class="field">
-								<label for="gender">Genre</label>
-								<select id="gender" name="gender">
-									<option value="Femme">Femme</option>
-									<option value="Homme">Homme</option>
-									<option value="Autre">Autre</option>
-								</select></div><div class="field">
-									<label for="photo">Photo (facultative)</label>
-									<input id="photo" name="photo" type="file" accept="image/*">
-								</div>
-							<div class="field full">
-								<label for="number">N° membre</label>
-								<input id="number" name="number" type="text" readonly>
-							</div>
-						</div>
-						<button class="btn btn-primary" type="submit" style="margin-top:18px">Actualiser</button>
-					</form>
-				</div>
-				<div class="preview-wrap">
-					<article class="member-card madder" id="memberCard" aria-label="Aperçu de la carte de membre" role="button" tabindex="0" aria-haspopup="dialog">
-						<div class="card-top">
-							<div class="card-brand">
-								<img class="card-logo" src="Logo.png" alt="" onerror="this.hidden=true">
-								<!--<span>AGOMA</span>-->
-							</div>
-							<div class="card-type" id="cardCategory">GO régulière</div>
-						</div>
-						<div class="card-photo placeholder" id="cardPhoto" aria-label="Photo du membre">PHOTO</div>
-						<div class="card-name" id="cardName">Ariane Bourgeois</div>
-						<div class="card-meta">
-							<strong id="cardGender">Femme</strong>
-							<strong id="cardNumber">AG-0001</strong>
-						</div>
-						<div class="card-qr">
-							<img src="assetsagoma-qr.png" alt="Code QR AGOMA">
-							<span>Scannez le code QR</span>
-						</div>
-					</article>
-					<p class="card-preview-hint">Cliquez sur la carte pour l’agrandir.</p>
-					<button class="btn btn-primary download-card" id="downloadCard" type="button">Télécharger la carte en JPEG</button>
-				</div>
-			</div>
-		</div>
-	</section>
+	<div class="field">
+	<label for="lastName">Nom</label>
+	<input id="lastName" name="lastName" type="text" value="Bourgeois">
+	</div><div class="field"><label for="gender">Genre</label><select id="gender" name="gender"><option value="Femme">Femme</option>
+	<option value="Homme">Homme</option><option value="Autre">Autre</option></select></div>
+	<div class="field"><label for="photo">Photo (facultative)</label><input id="photo" name="photo" type="file" accept="image/*">
+	</div><div class="field full"><label for="number">N° membre</label><input id="number" name="number" type="text" value="Valide jusqu'au : 31/12/2027" readonly>
+	</div></div><button class="btn btn-primary" type="submit" style="margin-top:18px">Actualiser</button></form></div>
+	<div class="preview-wrap"><article class="member-card madder" id="memberCard" aria-label="Aperçu de la carte de membre" role="button" tabindex="0" aria-haspopup="dialog"><div class="card-top"><div class="card-brand"><img class="card-logo" src="Logo.png" alt="" onerror="this.hidden=true"><span>AGOMA</span></div><div class="card-type" id="cardCategory">GO régulier</div></div><div class="card-photo placeholder" id="cardPhoto" aria-label="Photo du membre">PHOTO</div><div class="card-name" id="cardName">Ariane Bourgeois</div><div class="card-meta"><strong id="cardGender">Femme</strong><strong id="cardNumber">AG-0001</strong></div><div class="card-qr"><img src="assetsagoma-qr.png" alt="Code QR AGOMA"><span>Scannez le code QR</span></div></article><p class="card-preview-hint">Cliquez sur la carte pour l’agrandir.</p><button class="btn btn-primary download-card" id="downloadCard" type="button">Télécharger la carte en JPEG</button></div></div></div></section>
     <dialog id="cardPreviewDialog" aria-label="Aperçu agrandi de la carte de membre">
-		<button class="preview-close" id="closeCardPreview" type="button">Fermer</button>
-		<div id="cardPreviewContent">
-		</div>
-	</dialog>
-    <section class="join" id="rejoindre">
-		<div class="shell">
-			<div class="eyebrow" style="justify-content:center">Le comité vous reçoit</div>
-			<h2 class="serif">Le cœur est libre.<br>Le budget aussi.</h2>
-			<p>Rejoignez AGOMA pour faire entrer plus de clarté dans votre vie, sans sacrifier votre capacité à aimer, à prospérer et à avancer sereinement.</p>
-			<a class="btn btn-primary" href="#accueil">Faire sa demande</a></div>
-	</section>
+	<button class="preview-close" id="closeCardPreview" type="button">Fermer</button><div id="cardPreviewContent"></div></dialog>
+    <section class="join" id="rejoindre"><div class="shell"><div class="eyebrow" style="justify-content:center">Le comité vous reçoit</div>
+	<h2 class="serif">Le cœur est libre.<br>Le budget aussi.</h2><p>Rejoignez AGOMA pour faire entrer plus de clarté dans votre vie, sans sacrifier votre capacité à aimer, à prospérer et à avancer sereinement.</p><a class="btn btn-primary" href="#accueil">Faire sa demande</a></div></section>
   </main>
-  <footer class="footer">
-	  <div class="shell footer-inner">
-		  <div class="footer-brand">AGOMA<small>Association des GOs Matérialistes · Fondée en 2026</small>
-		  </div>
-		  <div class="footer-note">Une association fondée pour préserver les faits, les émotions et les comptes dans un même équilibre délicat.</div>
-	  </div>
-  </footer>
+  <footer class="footer"><div class="shell footer-inner"><div class="footer-brand">AGOMA<small>Association des GOs Matérialistes · Fondée en 2026</small></div><div class="footer-note">Une association fondée pour préserver les faits, les émotions et les comptes dans un même équilibre délicat.</div></div></footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-  <script>
-const numeroCarte = "AGOMA-" + crypto.randomUUID().substring(0, 8).toUpperCase();
-
-document.getElementById("numero-carte").textContent = numeroCarte;
-</script>
     const menuButton=document.querySelector('.menu-toggle');
     const nav=document.querySelector('.navlinks');
     menuButton.addEventListener('click',()=>{
@@ -354,7 +139,8 @@ document.getElementById("numero-carte").textContent = numeroCarte;
       const full=[first.value.trim(),last.value.trim()].filter(Boolean).join(' ');
       document.getElementById('cardName').textContent=full||'Votre nom ici';
       document.getElementById('cardGender').textContent=gender.value||'Femme';
-      document.getElementById('cardNumber').textContent=number.value||`AG-${String(memberCounter).padStart(4,'0')}`;
+      const validity="Valide jusqu'au : 31/12/2027";
+	  document.getElementById('cardNumber').textContent=validity;number.value=validity;
       document.getElementById('cardCategory').textContent='GO régulier';
       memberCard.classList.add('madder');
     }
