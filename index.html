@@ -61,7 +61,11 @@ a:has(.brand-logo) {
     
 	<img class="brand-logo" src="Logob.png" alt="Logo AGOMA" onerror="this.hidden=true"></a>
     <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav class="navlinks" aria-label="Navigation principale"><a href="#mission">Notre mission</a><a href="#adhesion">Adhésion</a><a href="#membres">Membres</a><a href="#carte">Carte de membre</a><a href="#rejoindre">Rejoindre</a></nav>
+    <nav class="navlinks" aria-label="Navigation principale">
+	<a href="#mission">Notre mission</a>
+	<a href="#adhesion">Adhésion</a><a href="#membres">Membres</a>
+	<a href="#carte">Carte de membre</a>
+	<a href="#rejoindre">Rejoindre</a></nav>
   </div></header>
   <main>
     <section class="hero" id="accueil">
@@ -70,7 +74,11 @@ a:has(.brand-logo) {
 	<h1 class="serif">L'élégance<br>de <em>prévoir.</em></h1>
 	<p>AGOMA accompagne les membres qui veulent conjuguer stabilité, élégance et liberté financière sans que la vie sentimentale ne devienne un fardeau comptable.</p><div class="hero-actions"><a class="btn btn-primary" href="#adhesion">Adhérer</a><a class="btn btn-secondary" href="#carte">Voir la carte</a></div></div>
       <div class="seal-wrap">
-	  <div class="seal"><div class="seal-inner"><svg class="seal-crown" viewBox="0 0 100 80" fill="none" aria-hidden="true"><path d="M12 59 20 24l20 19 10-30 11 30 20-19 8 35H12Z" stroke="#9E182B" stroke-width="4" stroke-linejoin="round"/><path d="M25 32h50" stroke="#9E182B" stroke-width="4" stroke-linecap="round"/></svg></div></div></div>
+	  <div class="seal">
+	  <div class="seal-inner"><svg class="seal-crown" viewBox="0 0 100 80" fill="none" aria-hidden="true"><path d="M12 59 20 24l20 19 10-30 11 30 20-19 8 35H12Z" stroke="#9E182B" stroke-width="4" stroke-linejoin="round"/><path d="M25 32h50" stroke="#9E182B" stroke-width="4" stroke-linecap="round"/></svg>
+	  </div>
+	  </div>
+	  </div>
     </div></section>
     <section class="mission" id="mission">
 		<div class="shell mission-grid"><div>
@@ -112,18 +120,50 @@ a:has(.brand-logo) {
 				<label for="lastName">Nom</label>
 				<input id="lastName" name="lastName" type="text" value="Votre nom">
 			</div>
-			<div class="field"><label for="gender">Genre</label><select id="gender" name="gender"><option value="Femme">Femme</option>
-	<option value="Homme">Homme</option><option value="Autre">Autre</option></select></div>
-	<div class="field"><label for="photo">Photo (facultative)</label><input id="photo" name="photo" type="file" accept="image/*">
-	</div><div class="field full"><label for="number">N° membre</label><input id="number" name="number" type="text" value="Valide jusqu'au : 31/12/2027" readonly>
-	</div></div><button class="btn btn-primary" type="submit" style="margin-top:18px">Actualiser</button></form></div>
-	<div class="preview-wrap"><article class="member-card madder" id="memberCard" aria-label="Aperçu de la carte de membre" role="button" tabindex="0" aria-haspopup="dialog"><div class="card-top"><div class="card-brand"><img class="card-logo" src="Logo.png" alt="" onerror="this.hidden=true"><span>AGOMA</span></div><div class="card-type" id="cardCategory">Go régulière</div></div><div class="card-photo placeholder" id="cardPhoto" aria-label="Photo du membre">PHOTO</div><div class="card-name" id="cardName">Ariane Bourgeois</div><div class="card-meta"><strong id="cardGender">Femme</strong><strong id="cardNumber">AG-0001</strong></div><div class="card-qr"><img src="assetsagoma-qr.png" alt="Code QR AGOMA"><span>Scannez le code QR</span></div></article><p class="card-preview-hint">Cliquez sur la carte pour l’agrandir.</p><button class="btn btn-primary download-card" id="downloadCard" type="button">Télécharger la carte en JPEG</button></div></div></div></section>
+			<div class="field"><label for="gender">Genre</label><select id="gender" name="gender">
+			<option value="Femme">Femme</option>
+			<option value="Homme">Homme</option>
+			<option value="Autre">Autre</option>
+			</select>
+			</div>
+			<div class="field"><label for="photo">Photo (facultative)</label><input id="photo" name="photo" type="file" accept="image/*">
+			</div>
+			<div class="field full"><label for="number">N° membre</label>
+				<input id="number" name="number" type="text" value="Valide jusqu'au : 31/12/2027" readonly>
+			</div>
+			</div>
+			<button class="btn btn-primary" type="submit" style="margin-top:18px">Actualiser</button></form>
+			</div>
+		<div class="preview-wrap">
+		<article class="member-card madder" id="memberCard" aria-label="Aperçu de la carte de membre" role="button" tabindex="0" aria-haspopup="dialog">
+		<div class="card-top"><div class="card-brand"><img class="card-logo" src="Logo.png" alt="" onerror="this.hidden=true">
+		<span>AGOMA</span></div>
+		<div class="card-type" id="cardCategory">Go régulière</div>
+		</div><div class="card-photo placeholder" id="cardPhoto" aria-label="Photo du membre">PHOTO</div>
+		<div class="card-name" id="cardName">Ariane Bourgeois</div><div class="card-meta"><strong id="cardGender">Femme</strong>
+		<strong id="cardNumber">AG-0001</strong></div><div class="card-qr"><img src="assetsagoma-qr.png" alt="Code QR AGOMA">
+		<span>Scannez le code QR</span></div></article><p class="card-preview-hint">Cliquez sur la carte pour l’agrandir.</p>
+		<button class="btn btn-primary download-card" id="downloadCard" type="button">Télécharger la carte en JPEG</button>
+		</div>
+		</div>
+		</div>
+		</section>
     <dialog id="cardPreviewDialog" aria-label="Aperçu agrandi de la carte de membre">
-	<button class="preview-close" id="closeCardPreview" type="button">Fermer</button><div id="cardPreviewContent"></div></dialog>
-    <section class="join" id="rejoindre"><div class="shell"><div class="eyebrow" style="justify-content:center">Le comité vous reçoit</div>
-	<h2 class="serif">Le cœur est libre.<br>Le budget aussi.</h2><p>Rejoignez AGOMA pour faire entrer plus de clarté dans votre vie, sans sacrifier votre capacité à aimer, à prospérer et à avancer sereinement.</p><a class="btn btn-primary" href="#accueil">Faire sa demande</a></div></section>
+	<button class="preview-close" id="closeCardPreview" type="button">Fermer</button>
+	<div id="cardPreviewContent"></div></dialog>
+    <section class="join" id="rejoindre">
+	<div class="shell"><div class="eyebrow" style="justify-content:center">Le comité vous reçoit</div>
+	<h2 class="serif">Le cœur est libre.<br>Le budget aussi.</h2>
+	<p>Rejoignez AGOMA pour faire entrer plus de clarté dans votre vie, sans sacrifier votre capacité à aimer, à prospérer et à avancer sereinement.</p>
+	<a class="btn btn-primary" href="#accueil">Faire sa demande</a>
+	</div></section>
   </main>
-  <footer class="footer"><div class="shell footer-inner"><div class="footer-brand">AGOMA<small>Association des GOs Matérialistes · Fondée en 2026</small></div><div class="footer-note">Une association fondée pour préserver les faits, les émotions et les comptes dans un même équilibre délicat.</div></div></footer>
+  <footer class="footer">
+  <div class="shell footer-inner">
+  <div class="footer-brand">AGOMA<small>Association des GOs Matérialistes · Fondée en 2026</small></div>
+  <div class="footer-note">Une association fondée pour préserver les faits, les émotions et les comptes dans un même équilibre délicat.</div>
+  </div>
+  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     const menuButton=document.querySelector('.menu-toggle');
